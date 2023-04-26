@@ -1,0 +1,28 @@
+<meta charset="UTF-8">
+<h1>Multiplicand</h1>
+<script type="text/javascript">
+	function text(text){
+		document.write(text);
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	
+	var multiplier = 1;
+	var multiplicand = parseInt(prompt("¿Qué tabla querés saber?"))
+
+{/*
+	while (multiplier <= 10) {
+		text( multiplicand + " x " + multiplier + " = " + (multiplicand * multiplier));
+		//multiplier = multiplier +1
+		multiplier++
+	}*/ }
+
+	text("Esta es la tabla del " + multiplicand);
+
+	for (var multiplier =1 ; multiplier <= 10 ; multiplier ++) {
+		text(multiplicand + " x " + multiplier + " = " + (multiplicand * multiplier))
+	}
+
+</script>
+

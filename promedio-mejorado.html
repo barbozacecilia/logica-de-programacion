@@ -1,0 +1,37 @@
+<meta charset= "utf-8">
+<h1>Promedios</h1>
+
+<script>
+
+	function imprimir (text) {
+		document.write (text)
+		document.write("<br>")
+	}
+
+	var numberExam = parseInt(prompt("Ingrese la cantidad de evaluaciones que tuvo"));
+	var count = 1;
+	var totalExam =0;
+	
+
+	while (count <= numberExam){
+		grade = parseInt(prompt("Nota del 1 al 10 del examen número " + count));
+		totalExam = totalExam + grade;
+		count++;
+	}
+
+	finalGrade = totalExam/numberExam;
+
+	imprimir("El total del promedio es: "+ finalGrade);
+	
+	if (finalGrade > 7 ) {
+		imprimir("El estudiante va a aprobar el año de forma sobre saliente")
+	};
+
+	if (finalGrade < 7) {
+		imprimir("El estudiante no aprobará el año")
+	};
+
+	if (finalGrade == 7) {
+		imprimir("El estudiante promociona el año")
+	};
+</script>

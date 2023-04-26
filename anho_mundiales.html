@@ -1,0 +1,20 @@
+<meta charset="UTF-8">
+<h1>Año de los mundiales</h1>
+<script type="text/javascript">
+	function text(text){
+		document.write(text);
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+	
+	var mundialSoccerYear = 1930;
+	var limit = parseInt(prompt("Ingrese hasta que año desea saber los años de mundiales"))
+
+	while (mundialSoccerYear <= limit) {
+		text("Hubo un mundial de la FIFA en el año "+ mundialSoccerYear);
+		mundialSoccerYear = mundialSoccerYear +4;
+	}
+
+	text("fin")
+</script>

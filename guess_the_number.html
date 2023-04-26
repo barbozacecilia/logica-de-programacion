@@ -1,0 +1,50 @@
+<meta charset="utf-8">
+<h1>Adivina el número</h1>
+<script >
+
+	function saltarLinea() {
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function text(frase) {
+		document.write(frase)
+		saltarLinea();
+	}
+
+	var guessTheNumber = Math.round(Math.random()*10);
+	var attempts = 3;
+	var count = 1;
+
+	while (count <= attempts) {
+
+		var yourNumber = parseInt(prompt("Ingrese el número entero entre 0 y 10. Este es el inteno número: " + count +" de 3." ));
+
+		if (guessTheNumber == yourNumber) {
+			alert("Ha acertado el número, en el intento " + attempts + ". El número era " + guessTheNumber);
+			break;
+		}
+
+		else {
+			alert("No tuvo suerte!");
+		}
+
+		count ++;
+
+	}
+
+	text("<h3>Fin del juego</h3>")
+
+	if (guessTheNumber == yourNumber) {
+
+		text("Usted acertó en el intento número " + count )
+	}
+
+	else {
+		text("Usted no ha acertado el número a adivinar, este era  el "+ guessTheNumber)
+	}
+
+	text("<h3>Gracias por jugar</h3>")
+
+</script>	
+

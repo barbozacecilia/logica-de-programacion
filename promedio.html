@@ -1,0 +1,29 @@
+<meta charset= "utf-8">
+<h1>Promedios</h1>
+
+<script>
+
+	function imprimir (text) {
+		document.write (text)
+		document.write("<br>")
+	}
+
+	var first = parseInt(prompt("Nota del 1 al 10 del primer examen"));
+	var second = parseInt(prompt("Nota del 1 al 10 del segundo examen"));
+
+	var finalGrade = ((first + second) / 2);
+
+	imprimir("El total del promedio es: "+ finalGrade);
+	
+	if (finalGrade > 7 ) {
+		imprimir("El estudiante va a aprobar el año de forma sobre saliente")
+	};
+
+	if (finalGrade < 7) {
+		imprimir("El estudiante no aprobará el año")
+	};
+
+	if (finalGrade == 7) {
+		imprimir("El estudiante promociona el año")
+	};
+</script>
